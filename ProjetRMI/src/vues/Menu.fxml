@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.CtrlMenu">
+   <children>
+      <Pane fx:id="btnQuitter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#quitter" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lbl_bvn" alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="600.0" text="Bienvenue sur Steam 2000" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label id="lbl_choix" fx:id="lbl_choix" alignment="CENTER" contentDisplay="CENTER" layoutY="53.0" prefHeight="54.0" prefWidth="600.0" text="Merci de choisir un des deux jeux disponible, vous avez le choix entre un Pendu et un Morpion." textAlignment="CENTER" />
+            <Button id="morpion" fx:id="btnMorpion" layoutX="105.0" layoutY="163.0" mnemonicParsing="false" onAction="#lanceMorpion" text="Morpion" />
+            <Button fx:id="btnPendu" layoutX="430.0" layoutY="163.0" mnemonicParsing="false" onAction="#lancePendu" text="Pendu" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="359.0" prefWidth="600.0" text="Projet Prog Rep 2019 : Baumann Alexandre / Dartevelle Jimmy" />
+            <Button fx:id="btnQuitter" layoutX="274.0" layoutY="281.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
